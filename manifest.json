@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2
+  "name": "AutoCaptcha for VTOPBeta",
+  "version": "0.0.0",
+  "author": "Yashaswi Soni",
+  "description": "Automatically fill the captcha for VTOPBeta (vtopbeta.vit.ac.in/vtop)",
+  "permissions": ["*://academics.vit.ac.in/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://vtopbeta.vit.ac.in/vtop/executeParentApp/?gsid=","*://vtopbeta.vit.ac.in/vtop/executeApp/?gsid=","*://vtopbeta.vit.ac.in/vtop/executeParentApp/","*://vtopbeta.vit.ac.in/vtop/executeApp/","*://27.251.102.132/executeParentApp/?gsid=","*://27.251.102.132/vtop/executeApp/?gsid=","*://27.251.102.132/executeParentApp/","*://27.251.102.132/executeApp/"],
+      "js": ["auto_captcha.js"]
+    },
+  ],
+  
+}
